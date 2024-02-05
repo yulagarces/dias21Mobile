@@ -1,0 +1,73 @@
+<resources>
+
+    <string name="app_name">21 días</string>
+    <!--Titulos inicio pantalla 1 -->
+    <string name= "titulo_pantalla1_epifania">Epifania</string>
+    <string name= "subtitulo_patalla1_epifania">el arte de manifestar en</string>
+    <string name= "subtitulo_pantalla1_veintiun">21 días</string>
+
+    <!--Titulos inicio pantalla 2 -->
+    <string name= "subtitulo_pantalla2_abre">Abre</string>
+    <string name= "titulo_pantalla2_tus">Tus</string>
+    <string name= "titulo_pantalla2_3">3</string>
+    <string name= "titulo_pantalla2_ojos">ojos</string>
+    <string name= "subtitulo_pantalla2_final">y descubre dentro de ti, los pensamientos iluminadores que pueden
+    manifestar, sanar y atraer la vida que quieres.</string>
+
+    <!--Titulos inicio pantalla 3 -->
+    <string name= "subtitulo_pantalla3_estas">Estás a</string>
+    <string name= "subtitulo_pantalla3_solo">solo</string>
+    <string name= "titulo_pantalla3_4">4</string>
+    <string name= "titulo_pantalla3_pasos">pasos</string>
+    <string name= "texto_pantalla3_izquierdo_superior">Elije lo que \n quieres sanar \n o atraer \n !Ahora¡</string>
+    <string name= "texto_pantalla3_derecho_superior">Sorpréndete \n con las \n afirmaciones y \n decretos más \n poderosos</string>
+    <string name= "texto_pantalla3_izquierdo_inferior">Repite 21 días \n hasta que el \n cerebro te \n obedezca y \n ganes \n recompensas</string>
+    <string name = "texto_pantalla3_derecho_inferior">Crea una \n meditación \n con la fuerza\n de tu voz y la \n magia de la \n  música</string>
+
+    <!--Textos pantalla inicio de sesión -->
+    <string name="correo">Correo</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="olvido">Olvidó Contraseña</string>
+    <string name="promocional">Tengo un código promocional</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="no_tiene_cuenta">¿No tiene cuenta?</string>
+    <string name="regristese">Regístrese</string>
+
+    <!--Textos pantalla categorias general -->
+    <string name="categoria_sanar">Sanar</string>
+    <string name="categoria_superar">Superar la \n   pérdida</string>
+    <string name="categoria_paz">Paz mental</string>
+    <string name="categoria_aceptar">Aceptar la \ndiferencia</string>
+    <string name="categoria_atraer">Atraer lo \nque quiero</string>
+    <string name="title_activity_que_estas_buscando">ActivityQueEstasBuscando</string>
+
+    <string name="titulo_sanar">Sanar</string>
+    <string name="titulo_sanar_uno">Elijo</string>
+    <string name="titulo_sanar_dos">aquí y ahora</string>
+
+    <string name="titulo_superar">Superar</string>
+    <string name="titulo_superar_uno">Yo puedo</string>
+    <string name="titulo_superar_dos">la pérdida de</string>
+
+    <string name="titulo_paz">Paz mental</string>
+    <string name="titulo_paz_uno">Tengo</string>
+    <string name="titulo_paz_dos">aquí y ahora</string>
+
+    <string name="titulo_diferencia">Diferencia</string>
+    <string name="titulo_diferencia_uno">Acepto la</string>
+    <string name="titulo_diferencia_dos">aquí y ahora</string>
+
+    <string name="titulo_atraer">Atraer</string>
+    <string name="titulo_atraer_uno">Puedo</string>
+    <string name="titulo_atraer_dos">lo que quiero</string>
+
+    <!--Textos pantalla grabación-->
+    <string name="titulo_grabacion">Grabación</string>
+    <string name="guia_grabacion_uno">!Habla ahora¡ \n Presiona para comenzar</string>
+    <string name="guia_grabacion_dos">Grabando... \n Presiona para pausar/detener</string>
+    <string name="frase_grabacion">Poseo la capacidad de cambiar lo que desee en mi vida.</string>
+    <string name="subtitulo_grabacion">1 de 21</string>
+    <string name="btn_grabar_de_nuevo">Grabar de nuevo</string>
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="title_activity_sanar1">Sanar1Activity</string>
+</resources>

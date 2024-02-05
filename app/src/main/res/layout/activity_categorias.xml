@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".ui.categorias.CategoriasActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75"/>
+
+    <ImageView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineHorizontal_1"
+        app:srcCompat="@drawable/titulo_abrir_portal" />
+
+    <ImageView
+        android:id="@+id/categoria_sanar"
+        android:layout_width="190dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/categoria_sanar"
+        android:background="@drawable/esquinas_redondas"
+        android:clipToOutline="true"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineHorizontal_2"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal_1" />
+
+    <TextView
+        android:id="@+id/txt_sanar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categoria_sanar"
+        style="@style/estilo_textos_categorias"
+        app:layout_constraintBottom_toBottomOf="@id/categoria_sanar"
+        app:layout_constraintStart_toStartOf="@id/categoria_sanar"
+        app:layout_constraintEnd_toEndOf="@id/categoria_sanar"/>
+
+    <ImageView
+        android:id="@+id/categoria_superar"
+        android:layout_width="190dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/esquinas_redondas"
+        android:clipToOutline="true"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+        app:layout_constraintTop_toBottomOf="@id/guidelineHorizontal_2"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal_1"
+        app:srcCompat="@drawable/categoria_superar_perdida" />
+
+    <TextView
+        android:id="@+id/txt_superar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categoria_superar"
+        style="@style/estilo_textos_categorias"
+        app:layout_constraintBottom_toBottomOf="@id/categoria_superar"
+        app:layout_constraintStart_toStartOf="@id/categoria_superar"
+        app:layout_constraintEnd_toEndOf="@id/categoria_superar"/>
+
+    <ImageView
+        android:id="@+id/categoria_paz"
+        android:layout_width="190dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/esquinas_redondas"
+        android:clipToOutline="true"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineHorizontal_3"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal_2"
+        app:srcCompat="@drawable/categoria_paz_mental" />
+
+    <TextView
+        android:id="@+id/txt_paz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categoria_paz"
+        style="@style/estilo_textos_categorias"
+        app:layout_constraintBottom_toBottomOf="@id/categoria_paz"
+        app:layout_constraintStart_toStartOf="@id/categoria_paz"
+        app:layout_constraintEnd_toEndOf="@id/categoria_paz"/>
+
+    <ImageView
+        android:id="@+id/categoria_diferencia"
+        android:layout_width="190dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/esquinas_redondas"
+        android:clipToOutline="true"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+        app:layout_constraintTop_toBottomOf="@id/guidelineHorizontal_3"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal_2"
+        app:srcCompat="@drawable/categoria_aceptar_diferencia" />
+
+    <TextView
+        android:id="@+id/txt_aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categoria_aceptar"
+        style="@style/estilo_textos_categorias"
+        app:layout_constraintBottom_toBottomOf="@id/categoria_diferencia"
+        app:layout_constraintStart_toStartOf="@id/categoria_diferencia"
+        app:layout_constraintEnd_toEndOf="@id/categoria_diferencia"/>
+
+    <ImageView
+        android:id="@+id/categoria_atraer"
+        android:layout_width="190dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/esquinas_redondas"
+        android:clipToOutline="true"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal_3"
+        app:srcCompat="@drawable/categoria_atraer_quiero" />
+
+    <TextView
+        android:id="@+id/txt_atraer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categoria_atraer"
+        style="@style/estilo_textos_categorias"
+        app:layout_constraintBottom_toBottomOf="@id/categoria_atraer"
+        app:layout_constraintStart_toStartOf="@id/categoria_atraer"
+        app:layout_constraintEnd_toEndOf="@id/categoria_atraer"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

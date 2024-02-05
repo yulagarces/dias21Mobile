@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo_epifania"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_epifania"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Base.Theme.Ventiun21Dias"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.grabacion.GrabacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.categorias.DetalleCategoriasActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sanar1"
+            android:theme="@style/Base.Theme.Ventiun21Dias" />
+        <activity
+            android:name=".ui.categorias.CategoriasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.intro.QueEstasBuscandoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_que_estas_buscando"
+            android:theme="@style/Theme.Ventiun21Dias" />
+        <activity
+            android:name=".ui.intro.AbrirPortalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.intro.IniciarSesionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.intro.IntroActivityDos"
+            android:exported="false" />
+        <activity
+            android:name=".ui.intro.IntroActivityUno"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.intro.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
