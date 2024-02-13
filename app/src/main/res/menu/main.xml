@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_universo"
+            android:icon="@mipmap/ic_universo"
+            android:title="@string/menu_universo"
+            />
+        <item
+            android:id="@+id/nav_grabacion"
+            android:icon="@mipmap/ic_grabacion"
+            android:title="@string/menu_grabacion" />
+        <item
+            android:id="@+id/nav_notificaciones"
+            android:icon="@mipmap/ic_notificacion"
+            android:title="@string/menu_notificacion" />
+        <item
+            android:id="@+id/nav_volumen"
+            android:icon="@mipmap/ic_volumen"
+            android:title="@string/menu_volumen" />
+        <item
+            android:id="@+id/nav_psicorappi"
+            android:icon="@mipmap/ic_volumen"
+            android:title="@string/menu_pisorappi" />
+        <item
+            android:id="@+id/nav_carrito"
+            android:icon="@mipmap/ic_carrito"
+            android:title="@string/menu_carrito" />
+        <item
+            android:id="@+id/nav_calendario"
+            android:icon="@mipmap/ic_calendario"
+            android:title="@string/menu_calendario" />
+        <item
+            android:id="@+id/nav_recompensas"
+            android:icon="@mipmap/ic_recompensa"
+            android:title="@string/menu_recompensas" />
+        <item
+            android:id="@+id/nav_amigos"
+            android:icon="@mipmap/ic_amigo"
+            android:title="@string/menu_amigos" />
+        <item
+            android:id="@+id/nav_pagina"
+            android:icon="@mipmap/ic_pagina"
+            android:title="@string/menu_pagina" />
+        <item
+            android:id="@+id/nav_problema"
+            android:icon="@mipmap/ic_problema"
+            android:title="@string/menu_problema" />
+        <item
+            android:id="@+id/nav_cerrar"
+            android:icon="@mipmap/ic_cerrar"
+            android:title="@string/menu_cerrar" />
+
+    </group>
+</menu>

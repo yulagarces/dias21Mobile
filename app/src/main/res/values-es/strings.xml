@@ -1,6 +1,7 @@
 <resources>
 
     <string name="app_name">21 días</string>
+
     <!--Titulos inicio pantalla 1 -->
     <string name= "titulo_pantalla1_epifania">Epifania</string>
     <string name= "subtitulo_patalla1_epifania">el arte de manifestar en</string>
@@ -61,6 +62,10 @@
     <string name="titulo_atraer_uno">Puedo</string>
     <string name="titulo_atraer_dos">lo que quiero</string>
 
+    <!--Titulos inicio pantalla qué estás buscando -->
+    <string name= "titulo_qué">Buscando?</string>
+    <string name= "subtitulo_qué">¿Qué estás</string>
+
     <!--Textos pantalla grabación-->
     <string name="titulo_grabacion">Grabación</string>
     <string name="guia_grabacion_uno">!Habla ahora¡ \n Presiona para comenzar</string>
@@ -70,4 +75,47 @@
     <string name="btn_grabar_de_nuevo">Grabar de nuevo</string>
     <string name="btn_aceptar">Aceptar</string>
     <string name="title_activity_sanar1">Sanar1Activity</string>
+
+    <!--Titulos inicio pantalla portal -->
+    <string name= "subtitulo_portal">Acabas de abrir el</string>
+    <string name= "titulo_portal">Portal</string>
+    <string name= "titulo_manifestacion">Manifestación</string>
+    <string name= "subtitulo_manifestacion">21 días de \nreprogramación</string>
+
+    <!-- Etiquetas menú -->
+    <string name="menu_universo">Mi universo</string>
+    <string name="menu_grabacion">Mi grabación</string>
+    <string name="menu_notificacion">Notificaciones</string>
+    <string name="menu_volumen">Volumen</string>
+    <string name="menu_pisorappi">PsicoRappi</string>
+    <string name="menu_carrito">Carrito de Compras</string>
+    <string name="menu_calendario">Calendario de Eventos</string>
+    <string name="menu_recompensas">Recompensas</string>
+    <string name="menu_amigos">Invitar amigos</string>
+    <string name="menu_pagina">Página web</string>
+    <string name="menu_problema">Reportar un problema</string>
+    <string name="menu_cerrar">Cerrar Sesión</string>
+    <string name="navigation_drawer_open">Cerrar Sesión</string>
+    <string name="navigation_drawer_close">Cerrar Sesión</string>
+
+    <!-- Textos cajas de diálogo -->
+    <string name="guia_titulo">Guía</string>
+    <string name="guia_subtitulo">grabación</string>
+    <string name="guia_texto_1">El éxito de 21 días de cambio \nestá en el uso de tu propia voz.</string>
+    <string name="guia_texto_2">Recuerda estos \npasos para grabar:</string>
+    <string name="guia_1">1. </string>
+    <string name="guia_2">2. </string>
+    <string name="guia_3">3. </string>
+    <string name="guia_4">4. </string>
+    <string name="guia_paso_1">Elige un lugar cómodo y tranquilo.</string>
+    <string name="guia_paso_2">Lee pausando y claro.</string>
+    <string name="guia_paso_3">Ponle emoción a tu voz.</string>
+    <string name="guia_paso_4">Acepta tu voz, no te juzgues!.</string>
+    <string name="guia_boton">Continuar</string>
+    <string name="guia_paso_11">Pulsa el botón de grabar una vez para empezar a grabar.</string>
+    <string name="guia_paso_22">Si deseas detener la \ngrabación pulsa de nuevo \nel botón central.</string>
+    <string name="guia_3_texto">Escucha el audio, se es de tu \nagrado continúa, de lo contrario \nvuelve a grabar</string>
+    <string name="guia_4_titulo">¡Muy bien!</string>
+    <string name="guia_4_texto">Haz completado la grabación de tus 21 \nfrases. Ahora vamos a seleccionar una \nmelodía de fondo.</string>
+    <string name="guia_4_boton">Vamos</string>
 </resources>

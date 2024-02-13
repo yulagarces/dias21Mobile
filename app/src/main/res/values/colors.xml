@@ -6,4 +6,15 @@
     <color name="btn_color">#FF8DE2D6</color>
     <color name="btn_texto">#6B98C1</color>
     <color name="titulo_amarillo">#F1CC70</color>
+    <!--Colores categoría sanar -->
+    <color name="tab_sanar_sel">#9B663C</color>
+    <color name="tab_sanar_no_sel">#B48F71</color>
+    <color name="tab_sanar_fondo">#EBE0D8</color>
+    <color name="lista_sanar_fondo">#F6F3F1</color>
+    <color name="lista_sanar_letra">#39281B</color>
+    <color name="lista_sanar_sel">#C6A080</color>
+    <color name="lista_sub_fondo">#F0DCCB</color>
+
+
+
 </resources>

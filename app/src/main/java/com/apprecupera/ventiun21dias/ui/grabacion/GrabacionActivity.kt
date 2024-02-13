@@ -12,6 +12,7 @@ import android.widget.TextView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.apprecupera.ventiun21dias.R
+import com.apprecupera.ventiun21dias.ui.dialogos.GrabacionDialogo1
 import java.io.File
 import java.io.IOException
 
@@ -25,6 +26,7 @@ class GrabacionActivity : AppCompatActivity() {
     private lateinit var txtGrabarNuevamente: TextView
     private lateinit var txtAceptar: TextView
     private lateinit var txtGuiaGrabacion: TextView
+    private lateinit var btnAyuda: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +49,11 @@ class GrabacionActivity : AppCompatActivity() {
         btnReproducir = findViewById<ImageView>(R.id.img_play)
         btnReproducir.setOnClickListener {
             onPlayButtonClicked()
+        }
+
+        btnAyuda = findViewById(R.id.img_ayuda)
+        btnAyuda.setOnClickListener(){
+            mostrarDialogo()
         }
 
     }
@@ -146,5 +153,10 @@ class GrabacionActivity : AppCompatActivity() {
 
     companion object {
         private const val PERMISSION_CODE = 101
+    }
+
+    private fun mostrarDialogo(){
+        val dialogFragment = GrabacionDialogo1()
+        dialogFragment.show(supportFragmentManager, "CustomDialog")
     }
 }

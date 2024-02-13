@@ -6,39 +6,60 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:textColor">@color/btn_color</item>
-    </style>
 
+    </style>
+    <style name="DrawerItemStyle">
+        <item name="android:textSize">20sp</item> <!-- Tamaño del texto -->
+        <item name="android:textColor">#E91E63</item> <!-- Color del texto -->
+        <item name="android:fontFamily">@font/recoleta</item>
+    </style>
     <style name="boton_general" parent="Widget.AppCompat.Button">
-        <item name="android:background">@drawable/boton_redondo_largo
-        </item> <!-- Fondo del botón -->
+        <item name="android:background">@drawable/boton_redondo_largo</item> <!-- Fondo del botón -->
         <item name="android:fontFamily">@font/recoleta</item>
         <item name="android:textColor">@color/white</item> <!-- Color del texto del botón -->
-
-
     </style>
-
     <style name="estilo_textos_categorias">
-
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">18sp</item>
         <item name="android:layout_margin">16dp</item>
         <item name="android:gravity">center</item>
-        <!-- Otros atributos que desees -->
+    </style>
+    <style name="estilo_textos_verdes">
+        <item name="android:textColor">@color/btn_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:gravity">left</item>
     </style>
     <style name="estilo_textos_general">
         <item name="android:textColor">#406587</item>
         <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/recoleta</item>
-        <!-- Otros atributos que desees -->
     </style>
-
     <style name="estilo_textos_titulos">
-
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">18sp</item>
         <item name="android:layout_margin">5dp</item>
         <item name="android:gravity">center</item>
-        <!-- Otros atributos que desees -->
+    </style>
+    <style name="estilo_textos_titulos_inicio">
+        <item name="android:textColor">#F0D99F</item>
+        <item name="android:textSize">120sp</item>
+        <item name="android:gravity">fill</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:fontFamily">@font/soul_signature</item>
+    </style>
+    <style name="estilo_textos_titulos_numeros">
+        <item name="android:textColor">@color/btn_color</item>
+        <item name="android:textSize">140sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/soul_signature</item>
+    </style>
+
+    <style name="estilo_textos_dialogo">
+        <item name="android:textColor">#406587</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/recoleta</item>
     </style>
 
     <style name="Theme.Ventiun21Dias" parent="Base.Theme.Ventiun21Dias" />

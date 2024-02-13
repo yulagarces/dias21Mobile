@@ -12,7 +12,7 @@ class IntroActivityUno : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro_uno)
 
-        val imageInicioDos = findViewById<ImageView>(R.id.img_inicio1_2)
+        val imageInicioDos = findViewById<ImageView>(R.id.btn_apagado1)
         Log.e("Error1", "Estoy en la primer pantalla")
         imageInicioDos.setOnClickListener {
             val intent = Intent(this, IntroActivityDos::class.java)

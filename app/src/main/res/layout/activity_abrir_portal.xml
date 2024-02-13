@@ -5,7 +5,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.intro.AbrirPortalActivity"
-    android:background="@drawable/pantalla_abrir_portal">
+    android:background="@drawable/fondo_plano_negro">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="0.3"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="0.3"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="0.3"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"/>
+    <TextView
+        android:id="@+id/txt_subtitulo_acabas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitulo_portal"
+        style="@style/estilo_textos_titulos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline2" />
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        style="@style/estilo_textos_titulos_numeros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:text="@string/titulo_portal"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_subtitulo_acabas"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_titulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/estilo_textos_titulos_inicio"
+        android:text="@string/titulo_manifestacion"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+    <TextView
+        android:id="@+id/txt_subtitulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitulo_manifestacion"
+        style="@style/estilo_textos_titulos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

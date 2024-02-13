@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.apprecupera.ventiun21dias.MainActivity
 import com.apprecupera.ventiun21dias.R
 import com.apprecupera.ventiun21dias.ui.grabacion.GrabacionActivity
 
@@ -41,7 +42,10 @@ class DetalleCategoriasActivity : AppCompatActivity() {
         val rootView = findViewById<View>(android.R.id.content)
         rootView.setOnClickListener {
             // Iniciar ActivityB al hacer clic en cualquier parte de la pantalla
-            val intent = Intent(this, GrabacionActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("categoria", titulo);
+            intent.putExtra("subtitulo1", titulo1)
+            intent.putExtra("subtitulo2", titulo2)
             startActivity(intent)
         }
 

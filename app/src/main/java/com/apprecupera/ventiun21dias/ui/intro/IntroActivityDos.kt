@@ -11,7 +11,7 @@ class IntroActivityDos : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro_dos)
 
-        val imageInicioTres = findViewById<ImageView>(R.id.img_inicio2_3)
+        val imageInicioTres = findViewById<ImageView>(R.id.btn_apagado2)
 
         imageInicioTres.setOnClickListener {
             val intent = Intent(this, IniciarSesionActivity::class.java)
