@@ -6,6 +6,9 @@
     <color name="btn_color">#FF8DE2D6</color>
     <color name="btn_texto">#6B98C1</color>
     <color name="titulo_amarillo">#F1CC70</color>
+    <color name="item_drawer">#4C7BA6</color>
+    <color name="item_drawer_selector">#8ADFD3</color>
+
     <!--Colores categoría sanar -->
     <color name="tab_sanar_sel">#9B663C</color>
     <color name="tab_sanar_no_sel">#B48F71</color>
@@ -14,6 +17,55 @@
     <color name="lista_sanar_letra">#39281B</color>
     <color name="lista_sanar_sel">#C6A080</color>
     <color name="lista_sub_fondo">#F0DCCB</color>
+
+    <!--Colores categoría superar -->
+    <color name="tab_superar_sel">#1D0624</color>
+    <color name="tab_superar_no_sel">#907C97</color>
+    <color name="tab_superar_fondo">#EADCEF</color>
+    <color name="lista_superar_fondo">#EFEEF4</color>
+    <color name="lista_superar_letra">#39281B</color>
+    <color name="lista_superar_sel">#8577AD</color>
+    <color name="lista_sub_sup_fondo">#F0DCCB</color>
+    <color name="titulo_superar">#F0DCCB</color>
+    <color name="subtitulo_superar">#FFFFFF</color>
+
+    <!--Colores categoría paz mental -->
+    <color name="tab_paz_sel">#061724</color>
+    <color name="tab_paz_no_sel">#64A3CA</color>
+    <color name="tab_paz_fondo">#8FC1D4</color>
+    <color name="lista_paz_fondo">#EFF4F6</color>
+    <color name="lista_paz_letra">#061724</color>
+    <color name="lista_paz_sel">#93BDCE</color>
+    <color name="lista_paz_sup_fondo">#C5E0F1</color>
+    <color name="titulo_paz">#CAEBFF</color>
+    <color name="subtitulo_paz">#FFFFFF</color>
+
+    <!--Colores categoría diferencia -->
+    <color name="tab_dif_sel">#061724</color>
+    <color name="tab_dif_no_sel">#959595</color>
+    <color name="tab_dif_fondo">#8FC1D4</color>
+    <color name="lista_dif_fondo">#EFF6E5</color>
+    <color name="lista_dif_letra">#061724</color>
+    <color name="lista_dif_sel">#DC9FCB</color>
+    <color name="lista_dif_sup_fondo">#F4E0EF</color>
+    <color name="titulo_dif">#EAE7FF</color>
+    <color name="subtitulo_dif">#FFFFFF</color>
+    <color name="degrade1_dif">#F3DD52</color>
+    <color name="degrade2_dif">#7036CC</color>
+    <color name="degrade3_dif">#AC2DC9</color>
+    <color name="degrade4_dif">#689992</color>
+    <color name="degrade5_dif">#B5D563</color>
+
+    <!--Colores categoría atraer -->
+    <color name="tab_atraer_sel">#144D12</color>
+    <color name="tab_atraer_no_sel">#44975B</color>
+    <color name="tab_atraer_fondo">#C4E5C9</color>
+    <color name="lista_atraer_fondo">#DFEEE1</color>
+    <color name="lista_atraer_letra">#061724</color>
+    <color name="lista_atraer_sel">#85C88F</color>
+    <color name="lista_atraer_sup_fondo">#C4E5C9</color>
+    <color name="titulo_atraer">#CAF598</color>
+    <color name="subtitulo_atraer">#FFFFFF</color>
 
 
 

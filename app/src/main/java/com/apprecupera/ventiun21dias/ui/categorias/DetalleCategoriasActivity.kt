@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.apprecupera.ventiun21dias.MainActivity
 import com.apprecupera.ventiun21dias.R
@@ -30,6 +31,7 @@ class DetalleCategoriasActivity : AppCompatActivity() {
         titulo = intent.getStringExtra("titulo").toString()
         titulo1 = intent.getStringExtra("titulo1").toString()
         titulo2 = intent.getStringExtra("titulo2").toString()
+        val listaCategoria = intent.getStringArrayListExtra("listadoCategoria")
 
         txtTitulo1 = findViewById(R.id.txt_titulo_1)
         txtTitulo2 = findViewById(R.id.txt_titulo_2)
@@ -43,6 +45,7 @@ class DetalleCategoriasActivity : AppCompatActivity() {
         rootView.setOnClickListener {
             // Iniciar ActivityB al hacer clic en cualquier parte de la pantalla
             val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("listadoCategoria", ArrayList(listaCategoria))
             intent.putExtra("categoria", titulo);
             intent.putExtra("subtitulo1", titulo1)
             intent.putExtra("subtitulo2", titulo2)

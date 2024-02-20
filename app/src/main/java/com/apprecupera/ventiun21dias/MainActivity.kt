@@ -3,6 +3,8 @@ package com.apprecupera.ventiun21dias
 import ViewPagerAdapterCategorias
 import android.content.res.ColorStateList
 import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
+import android.graphics.drawable.GradientDrawable.Orientation
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -61,6 +63,9 @@ class MainActivity : AppCompatActivity() {
         //Navigation Drawer
         nav_view = findViewById<NavigationView>(R.id.nav_view)
         nav_view.setItemTextAppearance(R.style.DrawerItemStyle)
+        val color = ContextCompat.getColor(this, R.color.item_drawer)
+        nav_view.itemTextColor = ColorStateList.valueOf(color)
+        nav_view.itemIconTintList = ColorStateList.valueOf(color)
 
         toolbar.setNavigationOnClickListener {
             drawer_layout.openDrawer(nav_view)}
@@ -145,6 +150,10 @@ class MainActivity : AppCompatActivity() {
         tituloCategoria = intent.getStringExtra("categoria").toString()
         subtituloCategoriaS = intent.getStringExtra("subtitulo1").toString()
         subtituloCategoriaI = intent.getStringExtra("subtitulo2").toString()
+        val listaCategoria = intent.getStringArrayListExtra("listadoCategoria")
+        val bundle = Bundle()
+        bundle.putStringArrayList("listadoCategoria", ArrayList(listaCategoria))
+        bundle.putString("categoria", tituloCategoria)
 
         //Banner
         bannerImage = findViewById<ImageView>(R.id.img_banner)
@@ -152,14 +161,17 @@ class MainActivity : AppCompatActivity() {
 
         // Configurar el adaptador de fragmentos
         adapter = ViewPagerAdapterCategorias(supportFragmentManager)
-        adapter.addFragment(AfirmacionesFragment(), "Afirmaciones")
-        adapter.addFragment(MusicaFragment(), "Música de Fondo")
+        val fragment = AfirmacionesFragment()
+        fragment.arguments = bundle
+        adapter.addFragment(fragment, "Afirmaciones")
+        adapter.addFragment(MusicaFragment(), "Música de fondo")
         adapter.addFragment(AudiosFragment(), "Mis audios")
 
         viewPager.adapter = adapter
         tabLayout.setupWithViewPager(viewPager)
 
-        Toast.makeText(this, "Esta es la categoría" + tituloCategoria, Toast.LENGTH_SHORT).show()
+
+        //Toast.makeText(this, "Esta es la categoría" + tituloCategoria, Toast.LENGTH_SHORT).show()
 
     }
 
@@ -175,14 +187,69 @@ class MainActivity : AppCompatActivity() {
 
     fun validarCategoria(tituloTemp: String) {
         if (tituloTemp.equals("Sanar")) {
-            colorNormal = ContextCompat.getColor(this, R.color.tab_sanar_no_sel)
-            colorSeleccionado = ContextCompat.getColor(this, R.color.tab_sanar_sel)
+            colorNormal = ContextCompat.getColor(this, R.color.tab_superar_no_sel)
+            colorSeleccionado = ContextCompat.getColor(this, R.color.tab_superar_sel)
             tabLayout.setTabTextColors(colorNormal, colorSeleccionado)
             tabLayout.setBackgroundColor(getColor(R.color.tab_sanar_fondo))
             tabLayout.setSelectedTabIndicatorColor(getColor(R.color.tab_sanar_sel))
             bannerImage.setImageResource(R.drawable.img_banner_sanar)
             titulo.text = tituloCategoria
-            titulo.setTextColor(Color.GREEN)
+            titulo.setTextColor(Color.WHITE)
+            subtituloSuperior.text = subtituloCategoriaS
+            subtituloInferior.text = subtituloCategoriaI
+        }
+        else if(tituloTemp.equals("Superar")){
+            colorNormal = ContextCompat.getColor(this, R.color.tab_superar_no_sel)
+            colorSeleccionado = ContextCompat.getColor(this, R.color.tab_superar_sel)
+            tabLayout.setTabTextColors(colorNormal, colorSeleccionado)
+            tabLayout.setBackgroundColor(getColor(R.color.tab_superar_fondo))
+            tabLayout.setSelectedTabIndicatorColor(getColor(R.color.tab_superar_sel))
+            bannerImage.setImageResource(R.drawable.img_banner_superar)
+            titulo.text = tituloCategoria
+            titulo.setTextColor(getColor(R.color.titulo_superar))
+            subtituloSuperior.text = subtituloCategoriaS
+            subtituloInferior.text = subtituloCategoriaI
+        }
+        else if(tituloTemp.equals("Paz mental")){
+            colorNormal = ContextCompat.getColor(this, R.color.tab_paz_no_sel)
+            colorSeleccionado = ContextCompat.getColor(this, R.color.tab_paz_sel)
+            tabLayout.setTabTextColors(colorNormal, colorSeleccionado)
+            tabLayout.setSelectedTabIndicatorColor(getColor(R.color.tab_paz_sel))
+            bannerImage.setImageResource(R.drawable.img_banner_paz)
+            titulo.text = tituloCategoria
+            titulo.setTextColor(getColor(R.color.titulo_paz))
+            subtituloSuperior.text = subtituloCategoriaS
+            subtituloInferior.text = subtituloCategoriaI
+
+
+        }
+        else if(tituloTemp.equals("Diferencia")){
+            colorNormal = ContextCompat.getColor(this, R.color.tab_dif_no_sel)
+            colorSeleccionado = ContextCompat.getColor(this, R.color.tab_dif_sel)
+            tabLayout.setTabTextColors(colorNormal, colorSeleccionado)
+            //tabLayout.setBackgroundColor(getColor(R.color.tab_dif_fondo))
+            tabLayout.setSelectedTabIndicatorColor(getColor(R.color.tab_dif_sel))
+            bannerImage.setImageResource(R.drawable.img_banner_diferencia)
+            titulo.text = tituloCategoria
+            titulo.setTextColor(getColor(R.color.titulo_dif))
+            subtituloSuperior.text = subtituloCategoriaS
+            subtituloInferior.text = subtituloCategoriaI
+            val colors = intArrayOf(
+                R.color.degrade1_dif,R.color.degrade2_dif,R.color.degrade3_dif,R.color.degrade4_dif,
+                R.color.degrade5_dif, )
+            val gradientDrawable = GradientDrawable(Orientation.TOP_BOTTOM, colors)
+            gradientDrawable.setSize(tabLayout.width, tabLayout.height)
+            tabLayout.background = gradientDrawable
+        }
+        else if(tituloTemp.equals("Atraer")){
+            colorNormal = ContextCompat.getColor(this, R.color.tab_atraer_no_sel)
+            colorSeleccionado = ContextCompat.getColor(this, R.color.tab_atraer_sel)
+            tabLayout.setTabTextColors(colorNormal, colorSeleccionado)
+            tabLayout.setBackgroundColor(getColor(R.color.tab_atraer_fondo))
+            tabLayout.setSelectedTabIndicatorColor(getColor(R.color.tab_atraer_sel))
+            bannerImage.setImageResource(R.drawable.img_banner_atraer)
+            titulo.text = tituloCategoria
+            titulo.setTextColor(getColor(R.color.titulo_atraer))
             subtituloSuperior.text = subtituloCategoriaS
             subtituloInferior.text = subtituloCategoriaI
         }

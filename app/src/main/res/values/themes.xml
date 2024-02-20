@@ -9,9 +9,19 @@
 
     </style>
     <style name="DrawerItemStyle">
-        <item name="android:textSize">20sp</item> <!-- Tamaño del texto -->
-        <item name="android:textColor">#E91E63</item> <!-- Color del texto -->
+        <item name="android:textSize">18sp</item> <!-- Tamaño del texto -->
+        <item name="android:textColor">#061724</item> <!-- Color del texto -->
         <item name="android:fontFamily">@font/recoleta</item>
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="android:textColor">#4C7BA6</item> <!-- Cambia "your_text_color" por el color que desees -->
+        <item name="android:textAppearance">@style/NavigationViewTextAppearance</item>
+    </style>
+
+    <style name="NavigationViewTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">40sp</item> <!-- Tamaño del texto -->
+        <item name="android:typeface">@font/recoleta</item> <!-- Tipo de letra -->
     </style>
     <style name="boton_general" parent="Widget.AppCompat.Button">
         <item name="android:background">@drawable/boton_redondo_largo</item> <!-- Fondo del botón -->

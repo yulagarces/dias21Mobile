@@ -1,0 +1,8 @@
+<!-- background_rectangular.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Color del fondo -->
+    <corners android:radius="8dp" /> <!-- Radio de las esquinas -->
+   <!-- Relleno -->
+    <solid android:color="@color/lista_sanar_fondo"/>
+</shape>

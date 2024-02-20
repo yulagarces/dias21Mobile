@@ -38,6 +38,13 @@
             android:icon="@mipmap/ic_recompensa"
             android:title="@string/menu_recompensas" />
         <item
+            android:id="@+id/menu_space"
+            android:title=""
+            android:enabled="false"
+            android:visible="true"
+            android:icon="@null"
+            android:actionLayout="@layout/menu_space_layout"/>
+        <item
             android:id="@+id/nav_amigos"
             android:icon="@mipmap/ic_amigo"
             android:title="@string/menu_amigos" />
@@ -45,6 +52,13 @@
             android:id="@+id/nav_pagina"
             android:icon="@mipmap/ic_pagina"
             android:title="@string/menu_pagina" />
+        <item
+            android:id="@+id/menu_space_2"
+            android:title=""
+            android:enabled="false"
+            android:visible="true"
+            android:icon="@null"
+            android:actionLayout="@layout/menu_space_layout"/>
         <item
             android:id="@+id/nav_problema"
             android:icon="@mipmap/ic_problema"
