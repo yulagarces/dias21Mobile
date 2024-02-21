@@ -10,7 +10,7 @@ class GrabacionDialogo4 : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val builder = AlertDialog.Builder(requireContext())
         val inflater = requireActivity().layoutInflater
-        val dialogView = inflater.inflate(R.layout.grabacion_dialogo_3_layout, null)
+        val dialogView = inflater.inflate(R.layout.grabacion_dialogo4_layout, null)
 
         // Configurar la vista de la caja de diálogo personalizada
 

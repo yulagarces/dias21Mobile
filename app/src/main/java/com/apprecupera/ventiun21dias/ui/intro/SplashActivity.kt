@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
 
     private val IMAGES = listOf(
         R.drawable.img_inicial,
-        R.drawable.img_splash_2)
+        R.drawable.ojo_centro_g)
     
     private val SPLASH_TIME_OUT: Long = 3000
     private var currentImageIndex = 0

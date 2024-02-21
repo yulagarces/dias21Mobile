@@ -8,7 +8,6 @@ import android.graphics.drawable.GradientDrawable.Orientation
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -16,7 +15,6 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
-import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import androidx.viewpager.widget.ViewPager
@@ -24,10 +22,7 @@ import com.apprecupera.ventiun21dias.ui.categorias.AfirmacionesFragment
 import com.apprecupera.ventiun21dias.ui.categorias.AudiosFragment
 import com.apprecupera.ventiun21dias.ui.categorias.MusicaFragment
 import com.google.android.material.tabs.TabLayout
-
-
 class MainActivity : AppCompatActivity() {
-
     private lateinit var drawer_layout: DrawerLayout
     private lateinit var nav_view: NavigationView
     private lateinit var toolbar: Toolbar
@@ -150,6 +145,7 @@ class MainActivity : AppCompatActivity() {
         tituloCategoria = intent.getStringExtra("categoria").toString()
         subtituloCategoriaS = intent.getStringExtra("subtitulo1").toString()
         subtituloCategoriaI = intent.getStringExtra("subtitulo2").toString()
+
         val listaCategoria = intent.getStringArrayListExtra("listadoCategoria")
         val bundle = Bundle()
         bundle.putStringArrayList("listadoCategoria", ArrayList(listaCategoria))
@@ -169,9 +165,6 @@ class MainActivity : AppCompatActivity() {
 
         viewPager.adapter = adapter
         tabLayout.setupWithViewPager(viewPager)
-
-
-        //Toast.makeText(this, "Esta es la categoría" + tituloCategoria, Toast.LENGTH_SHORT).show()
 
     }
 
@@ -220,14 +213,11 @@ class MainActivity : AppCompatActivity() {
             titulo.setTextColor(getColor(R.color.titulo_paz))
             subtituloSuperior.text = subtituloCategoriaS
             subtituloInferior.text = subtituloCategoriaI
-
-
         }
         else if(tituloTemp.equals("Diferencia")){
             colorNormal = ContextCompat.getColor(this, R.color.tab_dif_no_sel)
             colorSeleccionado = ContextCompat.getColor(this, R.color.tab_dif_sel)
             tabLayout.setTabTextColors(colorNormal, colorSeleccionado)
-            //tabLayout.setBackgroundColor(getColor(R.color.tab_dif_fondo))
             tabLayout.setSelectedTabIndicatorColor(getColor(R.color.tab_dif_sel))
             bannerImage.setImageResource(R.drawable.img_banner_diferencia)
             titulo.text = tituloCategoria

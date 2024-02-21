@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.Toast
 import com.apprecupera.ventiun21dias.R
 
 class CategoriasActivity : AppCompatActivity() {
@@ -94,7 +93,7 @@ class CategoriasActivity : AppCompatActivity() {
         titulo1 = getString(R.string.titulo_diferencia_uno)
         titulo2 = getString(R.string.titulo_diferencia_dos)
         titulo = getString(R.string.titulo_diferencia)
-        val categoriaLista = crearListaCategorias("Atraer")
+        val categoriaLista = crearListaCategorias("Diferencia")
         intent.putExtra("listadoCategoria", ArrayList(categoriaLista))
         intent.putExtra("titulo", titulo)
         intent.putExtra("titulo1", titulo1)
@@ -125,6 +124,8 @@ class CategoriasActivity : AppCompatActivity() {
                 "Suelto las adiciones", "Claustrofobia")
             "Atraer" -> listOf<String>("El Amor","La Salud","El Dinero","El Éxito","La disciplina",
                 "El Cuerpo que Quiero", "Hablar en Público")
+            "Diferencia" -> listOf<String>("LGTBIQ+", "Género","Racial","Discapacidad",
+                "Desplazamiento","Reincorporados", "Afronto el Bullying")
             else -> emptyList()
         }
     }

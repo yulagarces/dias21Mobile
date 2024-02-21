@@ -5,13 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.apprecupera.ventiun21dias.R
 
 class CategoriaAdaptador(private val context: Context, private var itemList: List<String>, private val categoria: String) :
     RecyclerView.Adapter<CategoriaAdaptador.ItemViewHolder>() {
-
+    private var selectedItem = RecyclerView.NO_POSITION
     inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
         val itemNameTextView: TextView = itemView.findViewById(R.id.txt_categoria)
 
@@ -34,23 +33,50 @@ class CategoriaAdaptador(private val context: Context, private var itemList: Lis
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val currentItem = itemList[position]
         holder.itemNameTextView.text = currentItem
+        holder.itemNameTextView.setOnClickListener{
+            selectedItem = position
+            notifyDataSetChanged()
+        }
         if(categoria.equals("Sanar")){
-            holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_sanar)
+            if(selectedItem == position){
+                holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_sanar_sel)
+            }
+            else{
+                holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_sanar)
+            }
         }
         else if(categoria.equals("Superar")){
-            holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_superar)
+            if(selectedItem == position){
+                holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_superar_sel)
+            }
+            else{
+                holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_superar)
+            }
         }
         else if(categoria.equals("Diferencia")){
-            holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_diferencia)
+            if(selectedItem == position){
+                holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_diferencia_sel)
+            }
+            else{
+                holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_diferencia)
+            }
         }
         else if(categoria.equals("Paz mental")){
-            holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_paz)
+            if(selectedItem == position){
+                holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_paz_sel)
+            }
+            else{
+                holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_paz)
+            }
         }
         else if(categoria.equals("Atraer")){
-            holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_atraer)
+            if(selectedItem == position){
+                holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_atraer_sel)
+            }
+            else{
+                holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_atraer)
+            }
         }
-
-
     }
 
     override fun getItemCount() = itemList.size
