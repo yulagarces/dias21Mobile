@@ -16,7 +16,9 @@
     <color name="lista_sanar_fondo">#F6F3F1</color>
     <color name="lista_sanar_letra">#39281B</color>
     <color name="lista_sanar_sel">#C6A080</color>
-    <color name="lista_sub_fondo">#F0DCCB</color>
+    <color name="lista_sub_fondo_sel">#F0DCCB</color>
+    <color name="lista_sub_fondo_no_sel">#F6F4F1</color>
+
 
     <!--Colores categoría superar -->
     <color name="tab_superar_sel">#1D0624</color>
@@ -28,6 +30,8 @@
     <color name="lista_sub_sup_fondo">#F0DCCB</color>
     <color name="titulo_superar">#F0DCCB</color>
     <color name="subtitulo_superar">#FFFFFF</color>
+    <color name="lista_sup_sub_fondo_sel">#DAD6EA</color>
+    <color name="lista_sup_sub_fondo_no_sel">#F1F0F4</color>
 
     <!--Colores categoría paz mental -->
     <color name="tab_paz_sel">#061724</color>
@@ -39,6 +43,8 @@
     <color name="lista_paz_sup_fondo">#C5E0F1</color>
     <color name="titulo_paz">#CAEBFF</color>
     <color name="subtitulo_paz">#FFFFFF</color>
+    <color name="lista_paz_sub_fondo_sel">#C5E0F1</color>
+    <color name="lista_paz_sub_fondo_no_sel">#EFF4F6</color>
 
     <!--Colores categoría diferencia -->
     <color name="tab_dif_sel">#061724</color>
@@ -55,6 +61,8 @@
     <color name="degrade3_dif">#AC2DC9</color>
     <color name="degrade4_dif">#689992</color>
     <color name="degrade5_dif">#B5D563</color>
+    <color name="lista_dif_sub_fondo_sel">#F4E0EF</color>
+    <color name="lista_dif_sub_fondo_no_sel">#EFF6E5</color>
 
     <!--Colores categoría atraer -->
     <color name="tab_atraer_sel">#144D12</color>
@@ -66,6 +74,8 @@
     <color name="lista_atraer_sup_fondo">#C4E5C9</color>
     <color name="titulo_atraer">#CAF598</color>
     <color name="subtitulo_atraer">#FFFFFF</color>
+    <color name="lista_atr_sub_fondo_sel">#C4E5C9</color>
+    <color name="lista_atr_sub_fondo_no_sel">#EBF4EC</color>
 
 
 

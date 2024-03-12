@@ -118,4 +118,10 @@
     <string name="guia_4_titulo">¡Muy bien!</string>
     <string name="guia_4_texto">Haz completado la grabación de tus 21 \nfrases. Ahora vamos a seleccionar una \nmelodía de fondo.</string>
     <string name="guia_4_boton">Vamos</string>
+
+    <!-- Textos subcategorias -->
+    <string name="elige_tus_frases">Elije tus frases de poder</string>
+    <string name="recomendaciones">Recomendaciones</string>
+    <string name="numero21">/21</string>
+    <string name="consecutivo">1</string>
 </resources>

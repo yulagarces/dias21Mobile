@@ -1,4 +1,5 @@
 package com.apprecupera.ventiun21dias.ui.categorias
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -30,7 +31,7 @@ class CategoriaAdaptador(private val context: Context, private var itemList: Lis
         return ItemViewHolder(itemView)
     }
 
-    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ItemViewHolder, @SuppressLint("RecyclerView") position: Int) {
         val currentItem = itemList[position]
         holder.itemNameTextView.text = currentItem
         holder.itemNameTextView.setOnClickListener{
