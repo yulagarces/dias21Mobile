@@ -20,9 +20,11 @@ class AfirmacionesFragment : Fragment() {
         //Recibir el listado correcto
         val listaCategoria = arguments?.getStringArrayList("listadoCategoria")
         val categoria = arguments?.getString("categoria").toString()
+        val titulo1 =  arguments?.getString("titulo1").toString()
+        val titulo2 =  arguments?.getString("titulo2").toString()
         // Configurar el RecyclerView
         val recyclerView = view.findViewById<RecyclerView>(R.id.rv_categorias)
-        val adapter = CategoriaAdaptador(requireContext(), listaCategoria?: emptyList(), categoria)
+        val adapter = CategoriaAdaptador(requireContext(), listaCategoria?: emptyList(), categoria, titulo1, titulo2)
         recyclerView.adapter = adapter
         adapter.actualizarLista(listaCategoria?: emptyList())
         recyclerView.layoutManager = LinearLayoutManager(requireContext())

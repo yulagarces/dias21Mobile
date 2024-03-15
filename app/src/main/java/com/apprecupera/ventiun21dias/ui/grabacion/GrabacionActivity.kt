@@ -13,6 +13,9 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.apprecupera.ventiun21dias.R
 import com.apprecupera.ventiun21dias.ui.dialogos.GrabacionDialogo1
+import com.apprecupera.ventiun21dias.ui.dialogos.GrabacionDialogo2
+import com.apprecupera.ventiun21dias.ui.dialogos.GrabacionDialogo3
+import com.apprecupera.ventiun21dias.ui.dialogos.GrabacionDialogo4
 import java.io.File
 import java.io.IOException
 
@@ -27,6 +30,8 @@ class GrabacionActivity : AppCompatActivity() {
     private lateinit var txtAceptar: TextView
     private lateinit var txtGuiaGrabacion: TextView
     private lateinit var btnAyuda: ImageView
+    private val contador : Int = 0
+    private val nombre: String = "Prueba"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,10 +53,11 @@ class GrabacionActivity : AppCompatActivity() {
         }
         btnReproducir = findViewById<ImageView>(R.id.img_play)
         btnReproducir.setOnClickListener {
-            onPlayButtonClicked()
+            onPlayButtonClicked(nombre)
         }
 
         btnAyuda = findViewById(R.id.img_ayuda)
+
         btnAyuda.setOnClickListener(){
             mostrarDialogo()
         }
@@ -77,14 +83,14 @@ class GrabacionActivity : AppCompatActivity() {
         } else {
             btnGrabar.setImageResource(R.drawable.boton_grabando)
             txtGuiaGrabacion.text = getString(R.string.guia_grabacion_dos)
-            startRecording()
+            startRecording(nombre)
         }
     }
     //Botón reproducir
-    fun onPlayButtonClicked() {
+    fun onPlayButtonClicked(nombre: String) {
         mediaPlayer = MediaPlayer()
         try {
-            mediaPlayer?.setDataSource(getFilePath())
+            mediaPlayer?.setDataSource(getFilePath(nombre))
             mediaPlayer?.prepare()
             mediaPlayer?.start()
         } catch (e: IOException) {
@@ -93,12 +99,12 @@ class GrabacionActivity : AppCompatActivity() {
     }
 
     //Grabar sonido
-    private fun startRecording() {
+    private fun startRecording(nombre: String) {
         mediaRecorder = MediaRecorder().apply {
             setAudioSource(MediaRecorder.AudioSource.MIC)
             setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
             setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB)
-            setOutputFile(getFilePath())
+            setOutputFile(getFilePath(nombre))
 
             try {
                 prepare()
@@ -133,14 +139,14 @@ class GrabacionActivity : AppCompatActivity() {
     }
 
     //Obtener ruta
-    private fun getFilePath(): String {
+    private fun getFilePath(nombre: String): String {
 
         val folder = getExternalFilesDir(null)?.absolutePath?:""
         val folderDir = File(folder)
         if (!folderDir.exists()) {
             folderDir.mkdirs()
         }
-        return "$folderDir/recorded_audio.3gp"
+        return "$folderDir/'$nombre'.3gp"
     }
 
     override fun onStop() {
@@ -157,6 +163,24 @@ class GrabacionActivity : AppCompatActivity() {
 
     private fun mostrarDialogo(){
         val dialogFragment = GrabacionDialogo1()
-        dialogFragment.show(supportFragmentManager, "CustomDialog")
+        dialogFragment.show(supportFragmentManager, "PrimerDialogo")
+    }
+
+    fun abrirDialogo1() {
+        val dialogo1 = GrabacionDialogo1()
+        dialogo1.show(supportFragmentManager, "PrimerDialogo")
+    }
+
+    fun abrirDialogo2() {
+        val dialogo2 = GrabacionDialogo2()
+        dialogo2.show(supportFragmentManager, "SegundoDialogo")
+    }
+    fun abrirDialogo3() {
+        val dialogo3 = GrabacionDialogo3()
+        dialogo3.show(supportFragmentManager, "SegundoDialogo")
+    }
+    fun abrirDialogo4() {
+        val dialogo4 = GrabacionDialogo4()
+        dialogo4.show(supportFragmentManager, "SegundoDialogo")
     }
 }

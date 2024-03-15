@@ -73,7 +73,7 @@
         android:layout_height="wrap_content"
         android:text="Elijo"
         style="@style/estilo_textos_general"
-        android:textSize="23sp"
+        android:textSize="18sp"
         android:textColor="@color/tab_sanar_no_sel"
         app:layout_constraintEnd_toEndOf="@+id/txt_cat_titulo"
         app:layout_constraintStart_toStartOf="@+id/txt_cat_titulo"
@@ -81,14 +81,13 @@
 
     <TextView
         android:id="@+id/txt_cat_subtitulo2"
+        style="@style/estilo_textos_general"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
         android:text="aquí y ahora"
-        style="@style/estilo_textos_general"
-        android:textSize="23sp"
         android:textColor="@color/tab_sanar_no_sel"
-        app:layout_constraintBottom_toBottomOf="@+id/txt_cat_titulo"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineVertical0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -114,19 +113,18 @@
         android:id="@+id/img_flechai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineVertical1"
         app:layout_constraintEnd_toStartOf="@+id/txt_sub_titulo"
-        app:layout_constraintStart_toStartOf="@+id/guidelineHorizontal1"
         app:layout_constraintTop_toTopOf="@+id/guidelineVertical0"
         app:srcCompat="@drawable/img_flechai_sanar" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/img_flechad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
+        android:layout_marginStart="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineVertical1"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineHorizontal2"
         app:layout_constraintStart_toEndOf="@+id/txt_sub_titulo"
         app:layout_constraintTop_toTopOf="@+id/guidelineVertical0"
         app:srcCompat="@drawable/img_flechad_sanar" />
@@ -156,7 +154,7 @@
         app:srcCompat="@drawable/ojo_centro_g" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/ic_recomendacion"
         android:layout_width="38dp"
         android:layout_height="29dp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineVertical3"
@@ -174,11 +172,11 @@
         android:textColor="@color/tab_sanar_no_sel"
         android:textSize="13sp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineVertical3"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/ic_recomendacion"
         app:layout_constraintTop_toTopOf="@+id/guidelineVertical2" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/txt_numero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/numero21"
@@ -197,8 +195,19 @@
         style="@style/estilo_textos_general"
         android:textColor="@color/tab_sanar_no_sel"
         app:layout_constraintBottom_toTopOf="@+id/guidelineVertical3"
-        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/txt_numero"
         app:layout_constraintTop_toTopOf="@+id/guidelineVertical2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recomendaciones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineVertical3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

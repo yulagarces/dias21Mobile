@@ -67,7 +67,7 @@
 
     <style name="estilo_textos_dialogo">
         <item name="android:textColor">#406587</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:gravity">center</item>
         <item name="android:fontFamily">@font/recoleta</item>
     </style>

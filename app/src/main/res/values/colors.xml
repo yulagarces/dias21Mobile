@@ -18,7 +18,13 @@
     <color name="lista_sanar_sel">#C6A080</color>
     <color name="lista_sub_fondo_sel">#F0DCCB</color>
     <color name="lista_sub_fondo_no_sel">#F6F4F1</color>
-
+    <color name="sub_titulo1_sanar">#242026</color>
+    <color name="sub_subtitulo_sanar">#E7D0BF</color>
+    <color name="subtitulo_sanar">#653514</color>
+    <color name="subtituloa_sanar_fondo">#EBE0D8</color>
+    <color name="subtituloa_sanar_letra">#9B663C</color>
+    <color name="sub_icono_sanar">#B48F71</color>
+    <color name="sub_numero_sanar">#735034</color>
 
     <!--Colores categoría superar -->
     <color name="tab_superar_sel">#1D0624</color>
@@ -32,6 +38,12 @@
     <color name="subtitulo_superar">#FFFFFF</color>
     <color name="lista_sup_sub_fondo_sel">#DAD6EA</color>
     <color name="lista_sup_sub_fondo_no_sel">#F1F0F4</color>
+    <color name="titulo_superar_sub">#6F5178</color>
+    <color name="sub_subtitulo_superar">#1D0624</color>
+    <color name="subtituloa_superar_fondo">#DAD6EA</color>
+    <color name="subtituloa_superar_letra">#1D0624</color>
+    <color name="sub_icono_superar">#70688E</color>
+    <color name="sub_numero_superar">#1D0624</color>
 
     <!--Colores categoría paz mental -->
     <color name="tab_paz_sel">#061724</color>
@@ -45,6 +57,13 @@
     <color name="subtitulo_paz">#FFFFFF</color>
     <color name="lista_paz_sub_fondo_sel">#C5E0F1</color>
     <color name="lista_paz_sub_fondo_no_sel">#EFF4F6</color>
+    <color name="sub_titulo1_paz">#061724</color>
+    <color name="sub_titulo_paz">#0078C1</color>
+    <color name="sub_subtitulo_paz">#061724</color>
+    <color name="subtituloa_paz_fondo">#C5E0F1</color>
+    <color name="subtituloa_paz_letra">#061724</color>
+    <color name="sub_icono_paz">#061724</color>
+    <color name="sub_numero_paz">#4C9CC9</color>
 
     <!--Colores categoría diferencia -->
     <color name="tab_dif_sel">#061724</color>
@@ -63,6 +82,13 @@
     <color name="degrade5_dif">#B5D563</color>
     <color name="lista_dif_sub_fondo_sel">#F4E0EF</color>
     <color name="lista_dif_sub_fondo_no_sel">#EFF6E5</color>
+    <color name="sub_titulo_dif">#061724</color>
+    <color name="sub_titulo1_dif">#25343F</color>
+    <color name="sub_subtitulo_dif">#061724</color>
+    <color name="subtituloa_dif_fondo">#EFF6E5</color>
+    <color name="subtituloa_dif_letra">#061724</color>
+    <color name="sub_icono_dif">#061724</color>
+    <color name="sub_numero_dif">#4C9CC9</color>
 
     <!--Colores categoría atraer -->
     <color name="tab_atraer_sel">#144D12</color>
@@ -76,6 +102,14 @@
     <color name="subtitulo_atraer">#FFFFFF</color>
     <color name="lista_atr_sub_fondo_sel">#C4E5C9</color>
     <color name="lista_atr_sub_fondo_no_sel">#EBF4EC</color>
+    <color name="sub_titulo1_atraer">#144D12</color>
+    <color name="sub_titulo_atraer">#055D12</color>
+    <color name="sub_subtitulo_atraer">#144D12</color>
+    <color name="subtituloa_atraer_fondo">#C4E5C9</color>
+    <color name="subtituloa_atraer_letra">#061724</color>
+    <color name="sub_icono_atraer">#247130</color>
+    <color name="sub_numero_atraer">#061724</color>
+
 
 
 

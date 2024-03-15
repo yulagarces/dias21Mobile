@@ -5,11 +5,14 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView.OnItemClickListener
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.apprecupera.ventiun21dias.R
+import com.apprecupera.ventiun21dias.ui.subcategorias.SubcategoriasActivity
 
-class CategoriaAdaptador(private val context: Context, private var itemList: List<String>, private val categoria: String) :
+class CategoriaAdaptador(private val context: Context, private var itemList: List<String>, private val categoria: String, private val titulo1: String, private val titulo2: String) :
     RecyclerView.Adapter<CategoriaAdaptador.ItemViewHolder>() {
     private var selectedItem = RecyclerView.NO_POSITION
     inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
@@ -21,8 +24,18 @@ class CategoriaAdaptador(private val context: Context, private var itemList: Lis
 
         override fun onClick(v: View?) {
             val position = adapterPosition
-            //val intent = Intent(context, DetailActivity::class.java)
-            //context.startActivity(intent)
+            if(position != RecyclerView.NO_POSITION){
+                val selectedText = itemNameTextView.text.toString()
+                val intent = Intent(context, SubcategoriasActivity::class.java).apply {
+                    putExtra("texto_seleccionado", selectedText)
+                    putExtra("categoria", categoria)
+                    putExtra("titulo1", titulo1)
+                    putExtra("titulo2", titulo2)
+
+                }
+                itemView.context.startActivity(intent)
+            }
+
         }
     }
 
@@ -31,13 +44,12 @@ class CategoriaAdaptador(private val context: Context, private var itemList: Lis
         return ItemViewHolder(itemView)
     }
 
+
     override fun onBindViewHolder(holder: ItemViewHolder, @SuppressLint("RecyclerView") position: Int) {
         val currentItem = itemList[position]
+
         holder.itemNameTextView.text = currentItem
-        holder.itemNameTextView.setOnClickListener{
-            selectedItem = position
-            notifyDataSetChanged()
-        }
+
         if(categoria.equals("Sanar")){
             if(selectedItem == position){
                 holder.itemNameTextView.setBackgroundResource(R.drawable.background_item_sanar_sel)
@@ -80,6 +92,7 @@ class CategoriaAdaptador(private val context: Context, private var itemList: Lis
         }
     }
 
+
     override fun getItemCount() = itemList.size
 
     // Método para actualizar la lista de categorías
@@ -87,4 +100,6 @@ class CategoriaAdaptador(private val context: Context, private var itemList: Lis
         itemList = nuevaLista
         notifyDataSetChanged()
     }
+
+
 }

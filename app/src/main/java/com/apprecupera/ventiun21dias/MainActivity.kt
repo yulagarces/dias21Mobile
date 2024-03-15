@@ -150,6 +150,9 @@ class MainActivity : AppCompatActivity() {
         val bundle = Bundle()
         bundle.putStringArrayList("listadoCategoria", ArrayList(listaCategoria))
         bundle.putString("categoria", tituloCategoria)
+        bundle.putString("titulo1", subtituloCategoriaS)
+        bundle.putString("titulo2", subtituloCategoriaI)
+
 
         //Banner
         bannerImage = findViewById<ImageView>(R.id.img_banner)

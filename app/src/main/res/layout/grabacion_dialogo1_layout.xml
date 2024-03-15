@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
+    android:background="@drawable/dialogo_rectangular"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.Guideline
@@ -94,11 +95,12 @@
 
     <TextView
         android:id="@+id/txt_guia1_texto2"
+        style="@style/estilo_textos_dialogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:text="@string/guia_texto_2"
-        style="@style/estilo_textos_dialogo"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -114,28 +116,32 @@
 
     <View
         android:id="@+id/box"
-        android:layout_width="350dp"
-        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_margin="20dp"
         android:background="@drawable/blue_border"
         android:padding="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_aceptar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 
-    <Button
+    <TextView
         android:id="@+id/btn_aceptar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/guia_boton"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         style="@style/estilo_textos_dialogo"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        android:background="@drawable/boton_redondo_largo"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/guideline2"
         app:srcCompat="@drawable/boton_redondo_largo" />
 
     <ImageView
@@ -145,7 +151,7 @@
         android:paddingTop="20dp"
         app:layout_constraintEnd_toEndOf="@+id/box"
         app:layout_constraintStart_toStartOf="@+id/box"
-        app:layout_constraintTop_toBottomOf="@+id/txt_guia1_texto2"
+        app:layout_constraintTop_toBottomOf="@id/guideline5"
         app:srcCompat="@drawable/img_guia_estrella" />
 
     <TextView

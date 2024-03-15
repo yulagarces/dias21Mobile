@@ -101,13 +101,13 @@
     <!-- Textos cajas de diálogo -->
     <string name="guia_titulo">Guía</string>
     <string name="guia_subtitulo">grabación</string>
-    <string name="guia_texto_1">El éxito de 21 días de cambio \nestá en el uso de tu propia voz.</string>
+    <string name="guia_texto_1">El éxito de 21 días de cambio \n está en el uso de tu propia voz.</string>
     <string name="guia_texto_2">Recuerda estos \npasos para grabar:</string>
     <string name="guia_1">1. </string>
     <string name="guia_2">2. </string>
     <string name="guia_3">3. </string>
     <string name="guia_4">4. </string>
-    <string name="guia_paso_1">Elige un lugar cómodo y \ntranquilo.</string>
+    <string name="guia_paso_1">Elige un lugar cómodo y \n tranquilo.</string>
     <string name="guia_paso_2">Lee pausando y claro.</string>
     <string name="guia_paso_3">Ponle emoción a tu voz.</string>
     <string name="guia_paso_4">Acepta tu voz, no te juzgues!.</string>

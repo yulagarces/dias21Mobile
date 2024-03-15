@@ -112,7 +112,7 @@
     <string name="guia_paso_3">Ponle emoción a tu voz.</string>
     <string name="guia_paso_4">Acepta tu voz, no te juzgues!.</string>
     <string name="guia_boton">Continuar</string>
-    <string name="guia_paso_11">Pulsa el botón de grabar una vez para empezar a grabar.</string>
+    <string name="guia_paso_11">Pulsa el botón de grabar una \nvez para empezar a grabar.</string>
     <string name="guia_paso_22">Si deseas detener la \ngrabación pulsa de nuevo \nel botón central.</string>
     <string name="guia_3_texto">Escucha el audio, se es de tu \nagrado continúa, de lo contrario \nvuelve a grabar</string>
     <string name="guia_4_titulo">¡Muy bien!</string>

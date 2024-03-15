@@ -4,7 +4,7 @@
     <!-- Color del fondo -->
     <stroke
         android:width="2dp"
-        android:color="@color/sub_subtitulo_sanar"/>
+        android:color="@color/tab_superar_fondo"/>
     <corners android:radius="8dp" /> <!-- Radio de las esquinas -->
    <!-- Relleno -->
 
