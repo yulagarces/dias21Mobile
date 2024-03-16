@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 
@@ -31,13 +32,20 @@ class SubcategoriasActivity : AppCompatActivity(),  SubcategoriaAdaptador.OnItem
     private lateinit var txtConsecutivo: TextView
     private lateinit var txtNumero: TextView
     private lateinit var rvRecomendaciones: RecyclerView
-
-
-
+    private lateinit var toolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_subcategorias)
+
+        toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = ""
+        toolbar.setNavigationOnClickListener {
+            onBackPressed()
+        }
+
 
         textoSeleccionado = intent.getStringExtra("texto_seleccionado").toString()
         tituloCategoria = intent.getStringExtra("categoria").toString()
@@ -74,6 +82,7 @@ class SubcategoriasActivity : AppCompatActivity(),  SubcategoriaAdaptador.OnItem
 
     fun validarCategoria(){
         if (tituloCategoria.equals("Sanar")){
+            toolbar.setBackgroundResource(R.drawable.img_fondo_toolbar_sanar)
             txtTitulo.setTextColor(getColor(R.color.tab_sanar_sel))
             txtSubtitulo.setTextColor(getColor(R.color.tab_superar_sel))
             txtSubtitulo.setBackgroundResource(R.drawable.background_sub_sanar)
@@ -90,6 +99,7 @@ class SubcategoriasActivity : AppCompatActivity(),  SubcategoriaAdaptador.OnItem
 
         }
         else if(tituloCategoria.equals("Superar")){
+            toolbar.setBackgroundResource(R.drawable.img_fondo_toolbar_superar)
             txtTitulo.setTextColor(getColor(R.color.titulo_superar_sub))
             txtSubtitulo.setTextColor(getColor(R.color.sub_subtitulo_superar))
             txtSubtitulo.setBackgroundResource(R.drawable.background_sub_superar)
@@ -105,6 +115,7 @@ class SubcategoriasActivity : AppCompatActivity(),  SubcategoriaAdaptador.OnItem
             txtNumero.setTextColor(getColor(R.color.sub_numero_superar))
         }
         else if(tituloCategoria.equals("Paz mental")){
+            toolbar.setBackgroundResource(R.drawable.img_fondo_toolbar_paz)
             txtTitulo.setTextColor(getColor(R.color.sub_titulo_paz))
             txtSubtitulo.setBackgroundResource(R.drawable.subcategoria_paz_fondo)
             txtSubtitulo.setTextColor(getColor(R.color.sub_subtitulo_paz))
@@ -120,6 +131,7 @@ class SubcategoriasActivity : AppCompatActivity(),  SubcategoriaAdaptador.OnItem
             txtNumero.setTextColor(getColor(R.color.sub_icono_paz))
         }
         else if(tituloCategoria.equals("Diferencia")){
+            toolbar.setBackgroundResource(R.drawable.img_fondo_toolbar_diferencia)
             txtTitulo.setTextColor(getColor(R.color.sub_titulo_dif))
             txtSubtitulo.setBackgroundResource(R.drawable.subcategoria_dif_fondo)
             txtSubtitulo.setTextColor(getColor(R.color.sub_subtitulo_dif))
@@ -135,6 +147,7 @@ class SubcategoriasActivity : AppCompatActivity(),  SubcategoriaAdaptador.OnItem
             txtNumero.setTextColor(getColor(R.color.sub_icono_dif))
         }
         else if(tituloCategoria.equals("Atraer")){
+            toolbar.setBackgroundResource(R.drawable.img_fondo_toolbar_atraer)
             txtTitulo.setTextColor(getColor(R.color.sub_titulo_atraer))
             txtSubtitulo.setBackgroundResource(R.drawable.subcategoria_atraer_fondo)
             txtSubtitulo.setTextColor(getColor(R.color.sub_subtitulo_atraer))

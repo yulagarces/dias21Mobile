@@ -25,7 +25,7 @@ class GrabacionDialogo1 : DialogFragment() {
 
         }
         builder.setView(dialogView)
-        
+
 
         return builder.create()
     }

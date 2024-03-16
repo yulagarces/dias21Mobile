@@ -19,6 +19,9 @@
         android:theme="@style/Base.Theme.Ventiun21Dias"
         tools:targetApi="31">
         <activity
+            android:name=".ui.musica.MusicaActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.subcategorias.SubcategoriasActivity"
             android:exported="false" />
         <activity

@@ -227,12 +227,7 @@ class MainActivity : AppCompatActivity() {
             titulo.setTextColor(getColor(R.color.titulo_dif))
             subtituloSuperior.text = subtituloCategoriaS
             subtituloInferior.text = subtituloCategoriaI
-            val colors = intArrayOf(
-                R.color.degrade1_dif,R.color.degrade2_dif,R.color.degrade3_dif,R.color.degrade4_dif,
-                R.color.degrade5_dif, )
-            val gradientDrawable = GradientDrawable(Orientation.TOP_BOTTOM, colors)
-            gradientDrawable.setSize(tabLayout.width, tabLayout.height)
-            tabLayout.background = gradientDrawable
+            tabLayout.background = ContextCompat.getDrawable(this, R.drawable.img_fondo_degradado)
         }
         else if(tituloTemp.equals("Atraer")){
             colorNormal = ContextCompat.getColor(this, R.color.tab_atraer_no_sel)
