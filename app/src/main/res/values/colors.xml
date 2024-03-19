@@ -110,6 +110,12 @@
     <color name="sub_icono_atraer">#247130</color>
     <color name="sub_numero_atraer">#061724</color>
 
+    <!--Colores listado canciones -->
+    <color name="colorm_nombre">#242026</color>
+    <color name="colorm_autor">#656565</color>
+    <color name="colorm_numero">#406587</color>
+    <color name="colorm_divisor">#8ADFD3</color>
+
 
 
 

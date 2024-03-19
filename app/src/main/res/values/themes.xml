@@ -71,6 +71,29 @@
         <item name="android:gravity">center</item>
         <item name="android:fontFamily">@font/recoleta</item>
     </style>
+    <style name="estilo_item_musica_numero">
+        <item name="android:textColor">@color/colorm_numero</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/recoleta</item>
+    </style>
+    <style name="estilo_item_musica_nombre">
+        <item name="android:textColor">@color/colorm_nombre</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">@font/recoleta</item>
+        <item name="android:layout_marginLeft">15dp</item>
+
+    </style>
+    <style name="estilo_item_musica_autor">
+        <item name="android:textColor">@color/colorm_autor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:fontFamily">@font/recoleta</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
 
     <style name="Theme.Ventiun21Dias" parent="Base.Theme.Ventiun21Dias" />
     <!-- Base application theme. -->
