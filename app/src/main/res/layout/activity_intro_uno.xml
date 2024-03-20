@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pantalla_carga_inicial"
-    tools:context=".ui.intro.IntroActivityUno">
+    tools:context=".ui.intro.IntroActivityUno"
+    tools:ignore="ExtraText">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline0"

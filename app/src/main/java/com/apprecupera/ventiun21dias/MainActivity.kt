@@ -1,6 +1,7 @@
 package com.apprecupera.ventiun21dias
 
 import ViewPagerAdapterCategorias
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
@@ -21,6 +22,9 @@ import androidx.viewpager.widget.ViewPager
 import com.apprecupera.ventiun21dias.ui.categorias.AfirmacionesFragment
 import com.apprecupera.ventiun21dias.ui.categorias.AudiosFragment
 import com.apprecupera.ventiun21dias.ui.categorias.MusicaFragment
+import com.apprecupera.ventiun21dias.ui.intro.QueEstasBuscandoActivity
+import com.apprecupera.ventiun21dias.ui.musica.MusicaActivity
+import com.apprecupera.ventiun21dias.ui.volumen.VolumenActivity
 import com.google.android.material.tabs.TabLayout
 class MainActivity : AppCompatActivity() {
     private lateinit var drawer_layout: DrawerLayout
@@ -84,7 +88,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_volumen -> {
-                    // Manejar la selección del ítem de presentación
+                    val intent = Intent(this, VolumenActivity::class.java)
+                    startActivity(intent)
                     true
                 }
 

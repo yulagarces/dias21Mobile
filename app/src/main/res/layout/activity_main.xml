@@ -85,6 +85,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
+
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_categoria"
             android:layout_width="match_parent"
@@ -93,13 +94,15 @@
             android:background="@color/tab_sanar_fondo"
             app:layout_constraintTop_toBottomOf="@+id/categoria_sanar"
             app:tabGravity="center"
-            app:tabMode="scrollable" />
+            app:tabMode="scrollable"
+            tools:ignore="SpeakableTextPresentCheck" />
         <!-- ViewPager -->
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintTop_toBottomOf="@+id/tab_categoria">
+            app:layout_constraintTop_toBottomOf="@+id/tab_categoria"
+            tools:ignore="SpeakableTextPresentCheck">
 
         </androidx.viewpager.widget.ViewPager>
 

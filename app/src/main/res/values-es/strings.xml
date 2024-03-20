@@ -124,4 +124,26 @@
     <string name="recomendaciones">Recomendaciones</string>
     <string name="numero21">/21</string>
     <string name="consecutivo">1</string>
+
+    <!-- Textos música -->
+    <string name="dialogom_titulo">¡Perfecto!</string>
+    <string name="dialogom_subtitulo">Has elegido una melodía de fondo. \n¿Vamos a escuchar tus grabaciones?</string>
+    <string name="dialogom_aceptar">Vamos</string>
+    <string name="dialogom_cancelar">No, elegiré otra</string>
+    <string name="volumen_titulo">Volumen</string>
+    <string name="volumen_subtitulo">Aquí puedes ajustar el volumen de tu \nvoz y la melodía de fondo. Después de\n
+        ajustar presiona continuar</string>
+    <string name="volumen_voz">Voz</string>
+    <string name="volumen_musica">Música de fondo</string>
+    <string name="volumen_continuar">Continuar</string>
+
+    <!--Textos fotografía -->
+
+    <string name="fotografia_titulo">Mi fotografía</string>
+    <string name="fotografia_continuar">Continuar</string>
+    <string name="fotografia_subtitulo1">Personaliza con tu imagen</string>
+    <string name="fotografia_subtitulo2">Toca la imagen y sube una fotografía de \ntu galería. Si no la seleccionas, quedará \n esta por defecto</string>
+    <string name="dialogof_boton_cancelar">Cancelar</string>
+    <string name="dialogof_boton_tomar">Tomar una foto</string>
+    <string name="dialogof_boton_seleccionar">Seleccionar desde galería</string>
 </resources>

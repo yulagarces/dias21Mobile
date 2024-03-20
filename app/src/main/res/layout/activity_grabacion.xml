@@ -74,12 +74,13 @@
         android:id="@+id/img_grabar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
         android:clickable="true"
+        android:paddingTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal_1"
-        app:srcCompat="@drawable/boton_grabar" />
+        app:srcCompat="@drawable/boton_grabar"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/txt_guia_grabacion"
