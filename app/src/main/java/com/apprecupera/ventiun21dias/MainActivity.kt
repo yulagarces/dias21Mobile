@@ -1,11 +1,13 @@
 package com.apprecupera.ventiun21dias
 
 import ViewPagerAdapterCategorias
+import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.GradientDrawable.Orientation
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -22,6 +24,7 @@ import androidx.viewpager.widget.ViewPager
 import com.apprecupera.ventiun21dias.ui.categorias.AfirmacionesFragment
 import com.apprecupera.ventiun21dias.ui.categorias.AudiosFragment
 import com.apprecupera.ventiun21dias.ui.categorias.MusicaFragment
+import com.apprecupera.ventiun21dias.ui.foto.FotografiaActivity
 import com.apprecupera.ventiun21dias.ui.intro.QueEstasBuscandoActivity
 import com.apprecupera.ventiun21dias.ui.musica.MusicaActivity
 import com.apprecupera.ventiun21dias.ui.volumen.VolumenActivity
@@ -42,6 +45,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var titulo: TextView
     private lateinit var subtituloSuperior: TextView
     private lateinit var subtituloInferior: TextView
+    private lateinit var imgFoto: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,6 +69,19 @@ class MainActivity : AppCompatActivity() {
         val color = ContextCompat.getColor(this, R.color.item_drawer)
         nav_view.itemTextColor = ColorStateList.valueOf(color)
         nav_view.itemIconTintList = ColorStateList.valueOf(color)
+
+        //Foto del Navigation Drawer
+        imgFoto = nav_view.getHeaderView(0).findViewById(R.id.img_foto)
+        val sharedPreferences = getSharedPreferences("mi_foto", Context.MODE_PRIVATE)
+        val imageUriString = sharedPreferences.getString("miFotoUri", null)
+        if(imageUriString != null){
+            val imageUri = Uri.parse(imageUriString)
+            imgFoto.setImageURI(imageUri)
+        }
+        imgFoto.setOnClickListener {
+            val intent = Intent(this, FotografiaActivity::class.java)
+            startActivity(intent)
+        }
 
         toolbar.setNavigationOnClickListener {
             drawer_layout.openDrawer(nav_view)}

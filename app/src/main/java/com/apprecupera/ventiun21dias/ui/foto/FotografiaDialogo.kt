@@ -51,8 +51,8 @@ class FotografiaDialogo : DialogFragment() {
         return builder.create()
     }
 
-    @Throws(IOException::class)
-    private fun createImageFile(): File {
+  //  @Throws(IOException::class)
+   /* private fun createImageFile(): File {
         // Crea el nombre del archivo de imagen
         val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Date())
         val storageDir: File? = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
@@ -90,5 +90,5 @@ class FotografiaDialogo : DialogFragment() {
                 }
             }
         }
-    }
+    }*/
 }

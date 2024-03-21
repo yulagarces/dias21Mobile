@@ -16,10 +16,11 @@
 
     <ImageView
         android:id="@+id/img_foto"
-        android:layout_width="124dp"
-        android:layout_height="79dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:scaleType="centerCrop"
         android:src="@drawable/img_ojo_abierto"
+        android:background="@drawable/imagen_redonda"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txt_correo"
         app:layout_constraintStart_toStartOf="parent"

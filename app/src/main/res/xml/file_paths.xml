@@ -1,0 +1,5 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path
+        name="dias21_images"
+        path="Android/data/com.apprecupera.ventiun21dias/files/Pictures"/>
+</paths>
